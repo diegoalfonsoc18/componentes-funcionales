@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 function App() {
   return (
     <Container component="section" maxWidth="sm">
-      <Typography variant="h3" align="center">
+      <Typography variant="h3" align="center" component="h1">
         Fomulario Registro
       </Typography>
       <FormSingUp />
