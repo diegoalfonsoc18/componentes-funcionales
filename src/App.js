@@ -1,11 +1,16 @@
 import "./App.css";
 import FormSingUp from "./components/FormSingUp";
+import { Container } from "@mui/material";
+import Typography from "@mui/material/Typography";
+
 function App() {
   return (
-    <>
-      <h1>Fomulario Registro</h1>
+    <Container component="section" maxWidth="sm">
+      <Typography variant="h3" align="center">
+        Fomulario Registro
+      </Typography>
       <FormSingUp />
-    </>
+    </Container>
   );
 }
 

@@ -1,5 +1,8 @@
 import Button from "@mui/material/Button";
 import { TextField } from "@mui/material";
+import Switch from "@mui/material/Switch";
+import FormGroup from "@mui/material/FormGroup";
+import FormControlLabel from "@mui/material/FormControlLabel";
 
 function FormSingUp() {
   return (
@@ -26,10 +29,16 @@ function FormSingUp() {
         margin="normal"
       />
 
-      <label>Promociones</label>
-      <input type="checkbox" />
-      <label>Novedades</label>
-      <input type="checkbox" />
+      <FormGroup>
+        <FormControlLabel
+          control={<Switch defaultChecked />}
+          label="Promociones"
+        />
+        <FormControlLabel
+          control={<Switch defaultChecked />}
+          label="Novedades"
+        />
+      </FormGroup>
       <Button variant="contained" color="success">
         Registrarse
       </Button>
